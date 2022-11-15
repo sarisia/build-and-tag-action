@@ -21,4 +21,4 @@ jobs:
           commit_message: |
             Automatic build
             Commit ${{github.sha}}
-            Run https://${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
