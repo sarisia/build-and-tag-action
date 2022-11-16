@@ -11,3 +11,6 @@ inputs:
     description: The tag to update. If the workflow event is `release`, it will use the `tag_name` from the event payload.
   commit_message:
     description: Commit message.
+outputs:
+  commit_sha:
+    description: SHA of the commit newly created.

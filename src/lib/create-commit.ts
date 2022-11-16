@@ -36,7 +36,7 @@ export default async function createCommit(tools: Toolkit, commitMessage?: strin
     tree: tree.data.sha,
     parents: [tools.context.sha]
   })
-  tools.log.complete('Commit created')
+  tools.log.complete(`Commit created (${commit.data.sha})`)
 
   return commit.data
 }
